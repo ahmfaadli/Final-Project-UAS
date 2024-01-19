@@ -37,7 +37,7 @@ class Patient {
 
     static async update (id, data) {
       await new Promise((resolve, reject) => {
-          const sql = UPDATE patients SET ? WHERE id = ?;
+          const sql = "UPDATE patients SET ? WHERE id = ?";
           db.query(sql, [data, id], (err, results) => {
               resolve(results);
           });
@@ -49,7 +49,7 @@ class Patient {
 
     static async delete (id) {
       return new Promise((resolve, reject) => {
-          const sql = DELETE FROM patients WHERE id = ?;
+          const sql = "DELETE FROM patients WHERE id = ?";
           db.query(sql, id, (err, result) => {
               resolve(result);
           });

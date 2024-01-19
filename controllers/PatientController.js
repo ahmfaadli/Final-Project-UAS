@@ -123,7 +123,7 @@ class PatientController {
         res.status(200).json(data);
       } else {
         const data = {
-          message: Patient "not found",
+          message: "Patient not found",
         };
         res.status(404).json(data);
       }
@@ -140,7 +140,7 @@ class PatientController {
         res.status(200).json(data);
       } else {
         const data = {
-          message: Patient "not found",
+          message: "Patient not found",
         };
         res.status(404).json(data);
       }
@@ -157,7 +157,7 @@ class PatientController {
         res.status(200).json(data);
       } else {
         const data = {
-          message: Patient "not found",
+          message: "Patient not found",
         };
         res.status(404).json(data);
       }
